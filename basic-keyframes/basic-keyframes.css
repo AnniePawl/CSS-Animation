@@ -1,0 +1,66 @@
+/*
+animation-name: myFrames;
+animation-duration:2s;
+animation-timing-function: ease-in-out;
+animation-delay: 0s; (how long until animation starts)
+animation-iteration-count: 3;
+animation-direction:reverse/normal/alternate;
+animation-fill-mode: normal;(forwards/)
+animation-paly-state: running;(/paused)
+ */
+
+body {
+    background-color: #ffccff;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin-top: 50px;
+}
+
+/*Use -webkit-keyframes  */
+@-webkit-keyframes myFrames {
+    0% {
+        height: 200px;
+        background: pink;
+    }
+    50% {
+        height: 500px;
+        background: yellow;
+    }
+    90% {
+        height: 100px;
+        background:orange;
+    }
+}
+
+.box1 {
+    height:200px;
+    width: 200px;
+    display: inline-block;
+    position: relative;
+    background: white;
+    -webkit-animation: myFrames 2s infinite;
+}
+
+.box2 {
+    height:200px;
+    width: 200px;
+    display: inline-block;
+    position: relative;
+    background: white;
+    -webkit-animation: myFrames 2s infinite;
+}
+
+.box3 {
+    height:200px;
+    width: 200px;
+    display: inline-block;
+    position: relative;
+    background: white;
+    -webkit-animation: myFrames 2s infinite;
+}

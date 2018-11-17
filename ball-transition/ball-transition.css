@@ -1,0 +1,39 @@
+/* Think About BEST elements to Animate */
+/* Some great animatable properties Include: font-size, background-color, width */
+/* Most Common Performant Properties to animate: Position, Scale, Rotation, Opacity*/
+/* To trigger animations: Hover pseudo class, class changes  */
+
+body {
+    background-color: #6fa3f7;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin-top: 50px;
+}
+
+.trigger {
+    width: 150px;
+    height: 150px;
+    border: 20px solid pink;
+    border-radius: 50%;
+    background: red;
+}
+
+.circle {
+    background: yellow;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* Transition here */
+    transition: transform 300ms ease-on-out;
+}
+
+.trigger:hover .circle {
+    transform: translate(200px, 150px);
+
+}
