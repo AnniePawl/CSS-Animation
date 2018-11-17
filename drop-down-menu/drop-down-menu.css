@@ -1,0 +1,61 @@
+nav {
+    padding: 50px;
+    text-align: center;
+}
+
+nav > ul  {
+    list-style: none;
+    padding: 0;
+    margin:0;
+    display: inline-block;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+nav > ul > li {
+    float: left;
+    width: 200px;
+    height: 70px;
+    line-height: 65px;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+nav > ul > li:hover {
+    background: #d5d5d5;
+    border-radius: 5px;
+}
+
+ul.drop-menu {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    padding: 0;
+}
+
+ul.drop-menu li {
+    background: pink;
+    color: black;
+    list-style: none;
+}
+
+ul.drop-menu li:hover {
+    background: #d5d5d5;
+}
+
+ul.drop-menu li:last-child {
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* This is What hides menu unless triggered */
+ul.drop-menu li {
+    display: none;
+}
+
+li:hover > ul.drop-menu li {
+    display: block;
+}
